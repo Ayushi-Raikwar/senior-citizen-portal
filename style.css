@@ -1,0 +1,311 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* margin:auto; */
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 100;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50%;
+}
+
+
+/* Navigation Bar: List Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+   margin-right: 20px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 1px 4px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('https://policyoptions.irpp.org/wp-content/uploads/sites/2/2015/02/seniors-hands.jpg') no-repeat center center/cover;
+    height: 642px;
+    /* https://www.jtgtravel.com/wp-content/uploads/2021/12/indian-food-2021-10-21-04-03-18-utc.jpg */
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:2;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid rgb(0,0,128);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(204, 208, 246, 0.5)
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('https://media.istockphoto.com/id/922783734/photo/assorted-indian-recipes-food-various.jpg?s=612x612&w=0&k=20&c=p8DepvymWfC5j7c6En2UsQ6sUM794SQMwceeBW3yQ9M=')no-repeat center center/cover;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkzl4LM-AHNKg880NiFoeTVpBjcQy4K6YX2r4agd1UcI5pSNvTKYQVDYxW5Nbsy_WP_E&usqp=CAU') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 2% 15%;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    color: black;
+    background-color: yellowgreen;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.btn {
+    /* width: 80px;
+    height: 50px; */
+    background-color: rgb(255, 0, 0);
+    animation-name: btn;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+  }
+  
+  @keyframes btn {
+    0%   {background-color: rgb(0, 36, 240);}
+    25%  {background-color: yellow;}
+    50%  {background-color: rgb(255, 150, 4);}
+    100% {background-color: rgb(197, 6, 188);}
+  }
+  .h-primary{
+    animation: blink 3s infinite linear;
+
+}
+@keyframes blink{
+ 
+   20%{
+        color: rgb(176, 186, 213);
+    }
+    40%{
+        color: rgb(0, 255, 242);
+    }
+    70%{
+        color: rgb(55, 175, 169);
+    }
+}
+.butt{
+    width: 12vh;
+    height: 4vh;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(130, 130, 238);
+
+}
+.butt:hover{
+    background-color: #fff;
+    color:black;
+}
+#search{
+    width: 30vh;
+    height: 3vh;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+label{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}

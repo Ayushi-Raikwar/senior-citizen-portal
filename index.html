@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Senior Citizen Help Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px )" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <!--boot css-->
+    <link rel="stylesheet" href="css\boot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--Boot script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3ea53c1d6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src='https://t4.ftcdn.net/jpg/03/00/53/35/360_F_300533572_GEpPSVG2m4r5pqsk0HMmtuMgSXs58SWF.jpg' type='image'></a>
+
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+         
+            <li class="item"><a href="#contactus">Contact Us</a></li>
+            <li class="item"><a href="#telly">Help</a></li>
+
+         
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+           Senior Citizen Help Portal
+        </h1>
+        <p>Helping millions of Senior Citizens to know about information related to legal and financial assistance with authentication.</p>
+        <form action="https://en.wikipedia.org/wiki/Special:Search" class="f-class">
+            <label for="search">Ask for Help</label>
+            <input type="text" id="search" name="search" placeholder="Enter search term">
+            <button type="submit" class="butt">Search</button>
+        </form>
+
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center"> Services</h1>
+        <h1 class="h-primary center"> For Senior Citizens </h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://m.economictimes.com/thumb/msid-83662028,width-1200,height-900,resizemode-4,imgsize-296952/senior-citizen3-getty.jpg" href="https://www.etmoney.com/learn/saving-schemes/the-best-ways-to-invest-as-a-senior-citizen/"
+                    alt="">
+                <h2 class="h-secondary center">For Estate Planning</h2>
+                <p class="center">
+                    <a href="http://127.0.0.1:5501/backpage/1.html">Click here for more information</a>  
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="box">
+                <img src="data:image/jpeg;base64,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"  alt="">
+                <h2 class="h-secondary center">Legal Will</h2>
+                <p class="center"> <a href="http://127.0.0.1:5501/backpage/2.html">Click here for more information</a> </p>
+            </div>
+            <br>
+            <br>
+            <div class="box">
+                <img src="https://www.sessadorsey.com/wp-content/uploads/2020/11/Untitled-design-1.jpg" alt="">
+                <h2 class="h-secondary center">Guardianship</h2>
+                <p class="center"> <a href="https://thenationaltrust.gov.in/content/innerpage/guardianship.php">Click here for more information</a> </p>            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <section id="services-container">
+        <!-- <h1 class="h-primary center">For Students & Poor</h1> -->
+        <div id="services">
+            <div class="box">
+                <img src="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/6/17/12/23/37/olddd.jpg" alt="">
+                <h2 class="h-secondary center">Social Security Benefits</h2>
+                <p class="center"> <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1806506">Click here for more information</a> </p>
+                    
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="box">
+                <img src="https://www.indiablooms.com/finance_pic/2020/02caafde0034bbe159a878536372143f.jpg" alt="">
+                <h2 class="h-secondary center">Retirement Planning</h2>
+                <p class="center"> <a href="https://www.forbes.com/advisor/in/life-insurance/senior-citizen-pension-scheme/">Click here for more information</a> </p>
+            </div>
+            <br>
+            <br>
+            <div class="box">
+                <img src="https://imgk.timesnownews.com/story/1565180872-1517485719-1515560313-senior_citizens.jpg?tr=w-400,h-300,fo-auto"
+                    alt="">
+                <h2 class="h-secondary center">Tax Planning</h2>
+                <p class="center"> <a href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-2">Click here for more information</a> </p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <section id="services-container">
+        <!-- <h1 class="h-primary center">Youth & Environment</h1> -->
+        <div id="services">
+            <div class="box">
+                <img src="https://www.policybazaar.com/images/Health/health-chart-for-senior-citizens-in-india.jpg"
+                    width="250px" alt="">
+                <h2 class="h-secondary center">Medicare</h2>
+                <p class="center"> <a href="https://www.india.gov.in/spotlight/ayushman-bharat-national-health-protection-mission">Click here for more information</a> </p>
+          
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="box">
+                <img src="https://5.imimg.com/data5/CJ/CI/UT/SELLER-22065380/senior-citizens-red-carpet-health-insurance-plan-500x500.jpg" width="250px"
+                    alt="">
+                <h2 class="h-secondary center">Insurance</h2>
+                <p class="center"> <a href="https://www.bajajfinservmarkets.in/insurance/health-insurance/goverment-health-schemes-for-senior-citizens.html">Click here for more information</a> </p>
+            </div>
+
+
+    </section>
+    <center>
+    <div id="contactus">
+        <h1>Contact Us</h1><br>
+        <h2><a href="https://www.facebook.com/profile.php?id=100073851347773&mibextid=ZbWKwL"> <i class="fa fa-facebook social" aria-hidden="true"></i>  Facebook</a></h2>
+   </div>
+</center>
+    <br>
+    <br>
+    
+    <footer>
+        <div class="center">
+          <button style="margin: 3%; width: 16vh; height: 7vh;"> <a id="telly" href="tel:14567"><i class="fa fa-phone social" aria-hidden="true"></i>  Help Line</a></button> 
+            <br>
+
+            Copyright &copy; www.SeniorCitizenPortal.com All rights reserved!
+        </div>
+    </footer>
+
+
+    <script src="https://www.drv.tw/inc/wd.js?s=izgd40z1smdsu5hjlyuefg"></script>
+</body>
+
+</html>
